@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="956.0" prefWidth="1400.0" style="-fx-background-color: f6f4f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminMeal.DeleteMealControler">
+   <children>
+      <ImageView fitHeight="862.0" fitWidth="1098.0" layoutX="315.0" layoutY="175.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/hotell.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" prefHeight="175.0" prefWidth="1404.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <ImageView fitHeight="328.0" fitWidth="327.0" layoutX="91.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/logo1.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95ccff" height="100.0" layoutX="592.0" layoutY="117.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
+            <Label layoutX="651.0" layoutY="103.0" prefHeight="96.0" prefWidth="246.0" text="  Admin">
+               <font>
+                  <Font name="Harlow Solid Italic" size="57.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="175.0" prefHeight="862.0" prefWidth="317.0" style="-fx-background-color: #95ccff; -fx-border-width: 2; -fx-border-color: #1e2b3c;">
+         <children>
+            <Pane layoutY="278.0" prefHeight="72.0" prefWidth="317.0" style="-fx-background-color: #1e2b3c;" />
+            <JFXButton layoutX="49.0" layoutY="685.0" onAction="#logoutOnAction" prefHeight="61.0" prefWidth="203.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5; -fx-border-color: #1e2b3c;" text="Log Out" textFill="#1e2b3c">
+               <graphic>
+                  <ImageView blendMode="MULTIPLY" fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMAGE/loggout.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="42.0" layoutY="136.0" onAction="#RoomOnAction" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-width: 5; -fx-border-radius: 20; -fx-background-radius: 20;" text="Rooms" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="41.0" layoutY="282.0" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Meal Package" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="46.0" layoutY="438.0" onAction="#IncomeReportOnAction" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Income Report" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="357.0" layoutY="244.0" prefHeight="63.0" prefWidth="1007.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Delete Meal" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="26.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="29.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/bin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="560.0" layoutY="657.0" onAction="#BackMealOnAction" prefHeight="61.0" prefWidth="192.0" style="-fx-background-radius: 20; -fx-background-color: white; -fx-border-radius: 20; -fx-border-width: 5; -fx-border-color: #1e2b3c;" text="back" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="959.0" layoutY="654.0" onAction="#DeleteMealOnAction" prefHeight="61.0" prefWidth="203.0" style="-fx-background-radius: 20; -fx-background-color: white; -fx-border-radius: 20; -fx-border-width: 5; -fx-border-color: #1e2b3c;" text="Delete" textFill="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="MealId" focusColor="WHITE" layoutX="602.0" layoutY="449.0" prefHeight="48.0" prefWidth="495.0" promptText="Meal Id" style="-fx-background-color: white; -fx-background-radius: 5;" unFocusColor="#1e2b3c">
+         <font>
+            <Font name="Comic Sans MS" size="21.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

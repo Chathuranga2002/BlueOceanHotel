@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="956.0" prefWidth="1400.0" style="-fx-background-color: f6f4f1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminIncomeControler">
+   <children>
+      <ImageView fitHeight="868.0" fitWidth="1089.0" layoutX="314.0" layoutY="175.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../IMAGE/income%20rep.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" prefHeight="175.0" prefWidth="1404.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <ImageView fitHeight="328.0" fitWidth="327.0" layoutX="91.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/logo1.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#95ccff" height="100.0" layoutX="584.0" layoutY="111.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
+            <Label layoutX="670.0" layoutY="104.0" prefHeight="96.0" prefWidth="246.0" text="  Admin">
+               <font>
+                  <Font name="Harlow Solid Italic" size="57.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="172.0" prefHeight="865.0" prefWidth="317.0" style="-fx-background-color: #95ccff; -fx-border-width: 2; -fx-border-color: #1e2b3c;">
+         <children>
+            <Pane layoutY="435.0" prefHeight="72.0" prefWidth="317.0" style="-fx-background-color: #1e2b3c;" />
+            <JFXButton layoutX="49.0" layoutY="685.0" onAction="#logoutOnAction" prefHeight="61.0" prefWidth="203.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5; -fx-border-color: #1e2b3c;" text="Log Out" textFill="#1e2b3c">
+               <graphic>
+                  <ImageView blendMode="MULTIPLY" fitHeight="51.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMAGE/loggout.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="42.0" layoutY="136.0" onAction="#RoomsOnAction" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-width: 5; -fx-border-radius: 20; -fx-background-radius: 20;" text="Rooms" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="41.0" layoutY="282.0" onAction="#MealPacageOnAction" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Meal Package" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="46.0" layoutY="438.0" prefHeight="61.0" prefWidth="238.0" ripplerFill="BLACK" style="-fx-background-color: #74b9ff; -fx-border-color: #1e2b3c; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Income Report" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="TOP" layoutX="420.0" layoutY="410.0" onAction="#MonthlyIncomeOnAction" prefHeight="346.0" prefWidth="402.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Monthly Income " textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="40.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/month.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton blendMode="MULTIPLY" buttonType="RAISED" contentDisplay="TOP" layoutX="898.0" layoutY="410.0" onAction="#AnnualyIncomeOnAction" prefHeight="346.0" prefWidth="402.0" ripplerFill="BLACK" style="-fx-background-color: #95ccff;" text="Annualy Income" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="40.0" />
+         </font>
+         <graphic>
+            <ImageView blendMode="MULTIPLY" fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMAGE/Anualy.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="557.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report">
+         <font>
+            <Font name="Comic Sans MS Bold" size="39.0" />
+         </font>
+      </Text>
+      <Text layoutX="1039.0" layoutY="708.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report">
+         <font>
+            <Font name="Comic Sans MS Bold" size="39.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

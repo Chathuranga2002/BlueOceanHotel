@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Blue ocean hotel:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Blue_ocean_hotel_jar</output-path>
+    <root id="archive" name="Blue ocean hotel.jar">
+      <element id="module-output" name="Blue ocean hotel" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../gdse_62 fx/jfoenix-8.0.10.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
